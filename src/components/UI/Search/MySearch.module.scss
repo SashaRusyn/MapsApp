@@ -1,0 +1,33 @@
+.mySearch {
+    left: 0;
+    right: 0;
+    position: relative;
+    width: 500px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.mySearch input {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+@media (max-width: 547px) {
+    .mySearch {
+        width: 300px;
+        padding: 5px;
+    }
+
+    .mySearch input {
+        /* max-width: 260px; */
+        padding: 5px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 333px) {
+    .mySearch input {
+        max-width: 260px;
+    }
+}
